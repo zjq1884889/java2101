@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input type="text" class="c1" id="i1" value="jq21">
+	<input type="text" class="c1" id="i2" value="jq22">
+</body>
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+<script type="text/javascript">
+	// 通过标签名获取元素
+	//alert($("input").val());
+	var inArr = $("input");
+	for (var i = 0; i < inArr.length; i++) {
+		// 遍历得到的是原生js对象，所以需要使用.value获取值
+
+		//	alert( inArr[i].value);
+
+	}
+
+	//================
+
+	//通过class样式获得对象
+	//alert($(".c1").val());
+	var inArr2 = $(".c1");
+	for (var i = 0; i < inArr.length; i++) {
+		alert(inArr[i].value);
+
+	}
+</script>
+</html>

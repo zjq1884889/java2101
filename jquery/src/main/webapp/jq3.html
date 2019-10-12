@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<input type="text" class="c1" id="i1" value="jq21">
+	<input type="text" class="c1" id="i2" value="jq22" placeholder="">
+	<input type="text" class="c1" value="jq23" placeholder="">
+</body>
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+<!--
+ 属性选择器
+ 选择器 即id class 标签名等选择方法
+ 选择器[属性名]  获得指定的属性名的元素
+ 选择器[属性名=值] 获得属性名 等于指定值的元素
+ 选择器[属性名！=值] 获得属性名不等于指定值的元素，没有这个属性也会选中
+   -->
+
+<script type="text/javascript">
+
+	//选择器[属性名]  获得指定的属性名的元素
+	//alert($(".c1[placeholder]").val());
+
+	// 选择器[属性名=值] 获得属性名 等于指定值的元素
+	//alert($(".c1[id=i1]").val());
+	//   选择器[属性名！=值] 获得属性名不等于指定值的元素，没有这个属性也会选中
+	// alert($(".c1[id !=i1]").val());
+	var inArr = $(".c1[id != i1]");
+	for(var i = 0; i < inArr.length; i++) {
+		
+		alert(inArr[i].value);
+
+	}
+</script>
+</html>
